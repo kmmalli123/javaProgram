@@ -234,7 +234,9 @@ Z	LATIN CAPITAL LETTER Z (U+005A)	feff005a
 \	REVERSE SOLIDUS (U+005C)	feff005c
 ]	RIGHT SQUARE BRACKET (U+005D)	feff005d
 
-4.1's complements and 2's complements.
+
+4.   
+   1's complements and 2's complements.
 
   1's complements-->The ones' complement binary numeral system is characterized by the 
                      bit complement of any integer value being the arithmetic negative of the value.
