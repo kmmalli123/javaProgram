@@ -1,0 +1,250 @@
+1.Key word of java 
+
+FLOW CONTROL= if-then, if-then-else, switch, for, while, do-while,  break, continue, return
+
+ACCESS SPECIFIER=Protected: Visible to classes with in the package 
+                Private: Visible with in the class 
+                No Access Modifier (Default): Visible to the class
+                Access Modifiers: Visibility
+
+
+NON ACCESS SPECIFIER=static,final,abstract,transient,volatile,synchronized,native
+
+
+
+DATA TYPE=Data types are divided into two groups:
+
+          Primitive data types -> byte, short, int, long, float, double, boolean and char
+
+          Non-primitive data types -> such as String, Arrays and Classes (you will learn more about these in a later chapter)
+
+byte-	  1 byte	Stores whole numbers from -128 to 127
+short-	  2 bytes	Stores whole numbers from -32,768 to 32,767
+int-	  4 bytes	Stores whole numbers from -2,147,483,648 to 2,147,483,647
+long-	  8 bytes	Stores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+float-	  4 bytes	Stores fractional numbers. Sufficient for storing 6 to 7 decimal digits
+double-	  8 bytes	Stores fractional numbers. Sufficient for storing 15 decimal digits
+boolean-  1 bit	        Stores true or false values
+char-	  2 bytes	Stores a single character/letter or ASCII values
+
+2.ASCII LIST-->
+
+   Dec  Char                           Dec  Char     Dec  Char     Dec  Char
+---------                           ---------     ---------     ----------
+  0  NUL (null)                      32  SPACE     64  @         96  `
+  1  SOH (start of heading)          33  !         65  A         97  a
+  2  STX (start of text)             34  "         66  B         98  b
+  3  ETX (end of text)               35  #         67  C         99  c
+  4  EOT (end of transmission)       36  $         68  D        100  d
+  5  ENQ (enquiry)                   37  %         69  E        101  e
+  6  ACK (acknowledge)               38  &         70  F        102  f
+  7  BEL (bell)                      39  '         71  G        103  g
+  8  BS  (backspace)                 40  (         72  H        104  h
+  9  TAB (horizontal tab)            41  )         73  I        105  i
+ 10  LF  (NL line feed, new line)    42  *         74  J        106  j
+ 11  VT  (vertical tab)              43  +         75  K        107  k
+ 12  FF  (NP form feed, new page)    44  ,         76  L        108  l
+ 13  CR  (carriage return)           45  -         77  M        109  m
+ 14  SO  (shift out)                 46  .         78  N        110  n
+ 15  SI  (shift in)                  47  /         79  O        111  o
+ 16  DLE (data link escape)          48  0         80  P        112  p
+ 17  DC1 (device control 1)          49  1         81  Q        113  q
+ 18  DC2 (device control 2)          50  2         82  R        114  r
+ 19  DC3 (device control 3)          51  3         83  S        115  s
+ 20  DC4 (device control 4)          52  4         84  T        116  t
+ 21  NAK (negative acknowledge)      53  5         85  U        117  u
+ 22  SYN (synchronous idle)          54  6         86  V        118  v
+ 23  ETB (end of trans. block)       55  7         87  W        119  w
+ 24  CAN (cancel)                    56  8         88  X        120  x
+ 25  EM  (end of medium)             57  9         89  Y        121  y
+ 26  SUB (substitute)                58  :         90  Z        122  z
+ 27  ESC (escape)                    59  ;         91  [        123  {
+ 28  FS  (file separator)            60  <         92  \        124  |
+ 29  GS  (group separator)           61  =         93  ]        125  }
+ 30  RS  (record separator)          62  >         94  ^        126  ~
+ 31  US  (unit separator)            63  ?         95  _        127  DEL
+
+UNICODE LIST-->
+
+
+Range	        Decimal 	Name
+
+0x0370-0x03FF	880-1023	Greek
+0x0400-0x04FF	1024-1279	Cyrillic
+0x0530-0x058F	1328-1423	Armenian
+0x0590-0x05FF	1424-1535	Hebrew
+0x0600-0x06FF	1536-1791	Arabic
+0x0700-0x074F	1792-1871	Syriac
+0x0780-0x07BF	1920-1983	Thaana
+0x0900-0x097F	2304-2431	Devanagari
+0x0980-0x09FF	2432-2559	Bengali
+0x0A00-0x0A7F	2560-2687	Gurmukhi
+0x0A80-0x0AFF	2688-2815	Gujarati
+0x0B00-0x0B7F	2816-2943	Oriya
+0x0B80-0x0BFF	2944-3071	Tamil
+0x0C00-0x0C7F	3072-3199	Telugu
+0x0C80-0x0CFF	3200-3327	Kannada
+0x0D00-0x0D7F	3328-3455	Malayalam
+0x0D80-0x0DFF	3456-3583	Sinhala
+0x0E00-0x0E7F	3584-3711	Thai
+0x0E80-0x0EFF	3712-3839	Lao
+0x0F00-0x0FFF	3840-4095	Tibetan
+0x1000-0x109F	4096-4255	Myanmar
+0x10A0-0x10FF	4256-4351	Georgian
+0x1100-0x11FF	4352-4607	Hangul Jamo
+0x1200-0x137F	4608-4991	Ethiopic
+0x13A0-0x13FF	5024-5119	Cherokee
+0x1400-0x167F	5120-5759	Unified Canadian Aboriginal Syllabics
+0x1680-0x169F	5760-5791	Ogham
+0x16A0-0x16FF	5792-5887	Runic
+0x1780-0x17FF	6016-6143	Khmer
+0x1800-0x18AF	6144-6319	Mongolian
+0x1E00-0x1EFF	7680-7935	Latin Extended Additional
+0x1F00-0x1FFF	7936-8191	Greek Extended
+
+
+UTF-8 LIST-->
+
+Character	Description	        Encoded Byte
+
+!	EXCLAMATION MARK (U+0021)	21
+"	QUOTATION MARK (U+0022) 	22
+#	NUMBER SIGN (U+0023)    	23
+$	DOLLAR SIGN (U+0024)	        24
+%	PERCENT SIGN (U+0025)   	25
+&	AMPERSAND (U+0026)      	26
+'	APOSTROPHE (U+0027)     	27
+(	LEFT PARENTHESIS (U+0028)	28
+)	RIGHT PARENTHESIS (U+0029)	29
+*	ASTERISK (U+002A)	        2a
++	PLUS SIGN (U+002B)      	2b
+,	COMMA (U+002C)          	2c
+-	HYPHEN-MINUS (U+002D)   	2d
+.	FULL STOP (U+002E)      	2e
+/	SOLIDUS (U+002F)	        2f
+0	DIGIT ZERO (U+0030)	        30
+1	DIGIT ONE (U+0031)	        31
+2	DIGIT TWO (U+0032)	        32
+3	DIGIT THREE (U+0033)	        33
+4	DIGIT FOUR (U+0034)	        34
+5	DIGIT FIVE (U+0035)	        35
+6	DIGIT SIX (U+0036)	        36
+7	DIGIT SEVEN (U+0037)    	37
+8	DIGIT EIGHT (U+0038)    	38
+9	DIGIT NINE (U+0039)     	39
+:	COLON (U+003A)          	3a
+;	SEMICOLON (U+003B)      	3b
+<	LESS-THAN SIGN (U+003C)  	3c
+=	EQUALS SIGN (U+003D)    	3d
+>	GREATER-THAN SIGN (U+003E)	3e
+?	QUESTION MARK (U+003F)	        3f
+@	COMMERCIAL AT (U+0040)   	40
+A	LATIN CAPITAL LETTER A (U+0041)	41
+B	LATIN CAPITAL LETTER B (U+0042)	42
+C	LATIN CAPITAL LETTER C (U+0043)	43
+D	LATIN CAPITAL LETTER D (U+0044)	44
+E	LATIN CAPITAL LETTER E (U+0045)	45
+F	LATIN CAPITAL LETTER F (U+0046)	46
+G	LATIN CAPITAL LETTER G (U+0047)	47
+H	LATIN CAPITAL LETTER H (U+0048)	48
+I	LATIN CAPITAL LETTER I (U+0049)	49
+J	LATIN CAPITAL LETTER J (U+004A)	4a
+K	LATIN CAPITAL LETTER K (U+004B)	4b
+L	LATIN CAPITAL LETTER L (U+004C)	4c
+M	LATIN CAPITAL LETTER M (U+004D)	4d
+N	LATIN CAPITAL LETTER N (U+004E)	4e
+O	LATIN CAPITAL LETTER O (U+004F)	4f
+P	LATIN CAPITAL LETTER P (U+0050)	50
+Q	LATIN CAPITAL LETTER Q (U+0051)	51
+R	LATIN CAPITAL LETTER R (U+0052)	52
+S	LATIN CAPITAL LETTER S (U+0053)	53
+T	LATIN CAPITAL LETTER T (U+0054)	54
+U	LATIN CAPITAL LETTER U (U+0055)	55
+V	LATIN CAPITAL LETTER V (U+0056)	56
+W	LATIN CAPITAL LETTER W (U+0057)	57
+X	LATIN CAPITAL LETTER X (U+0058)	58
+Y	LATIN CAPITAL LETTER Y (U+0059)	59
+Z	LATIN CAPITAL LETTER Z (U+005A)	5a
+[	LEFT SQUARE BRACKET (U+005B)	5b
+\	REVERSE SOLIDUS (U+005C)	5c
+
+UTF-16 list-->
+
+Character	Description     	Encoded Byte
+
+!	EXCLAMATION MARK (U+0021)	feff0021
+"	QUOTATION MARK (U+0022) 	feff0022
+#	NUMBER SIGN (U+0023)    	feff0023
+$	DOLLAR SIGN (U+0024)    	feff0024
+%	PERCENT SIGN (U+0025)    	feff0025
+&	AMPERSAND (U+0026)      	feff0026
+'	APOSTROPHE (U+0027)     	feff0027
+(	LEFT PARENTHESIS (U+0028)	feff0028
+)	RIGHT PARENTHESIS (U+0029)	feff0029
+*	ASTERISK (U+002A)       	feff002a
++	PLUS SIGN (U+002B)      	feff002b
+,	COMMA (U+002C)           	feff002c
+-	HYPHEN-MINUS (U+002D)   	feff002d
+.	FULL STOP (U+002E)	        feff002e
+/	SOLIDUS (U+002F)        	feff002f
+0	DIGIT ZERO (U+0030)     	feff0030
+1	DIGIT ONE (U+0031)      	feff0031
+2	DIGIT TWO (U+0032)      	feff0032
+3	DIGIT THREE (U+0033)     	feff0033
+4	DIGIT FOUR (U+0034)     	feff0034
+5	DIGIT FIVE (U+0035)     	feff0035
+6	DIGIT SIX (U+0036)      	feff0036
+7	DIGIT SEVEN (U+0037)    	feff0037
+8	DIGIT EIGHT (U+0038)    	feff0038
+9	DIGIT NINE (U+0039)     	feff0039
+:	COLON (U+003A)          	feff003a
+;	SEMICOLON (U+003B)      	feff003b
+<	LESS-THAN SIGN (U+003C)  	feff003c
+=	EQUALS SIGN (U+003D)    	feff003d
+>	GREATER-THAN SIGN (U+003E)	feff003e
+?	QUESTION MARK (U+003F)   	feff003f
+@	COMMERCIAL AT (U+0040)   	feff0040
+A	LATIN CAPITAL LETTER A (U+0041)	feff0041
+B	LATIN CAPITAL LETTER B (U+0042)	feff0042
+C	LATIN CAPITAL LETTER C (U+0043)	feff0043
+D	LATIN CAPITAL LETTER D (U+0044)	feff0044
+E	LATIN CAPITAL LETTER E (U+0045)	feff0045
+F	LATIN CAPITAL LETTER F (U+0046)	feff0046
+G	LATIN CAPITAL LETTER G (U+0047)	feff0047
+H	LATIN CAPITAL LETTER H (U+0048)	feff0048
+I	LATIN CAPITAL LETTER I (U+0049)	feff0049
+J	LATIN CAPITAL LETTER J (U+004A)	feff004a
+K	LATIN CAPITAL LETTER K (U+004B)	feff004b
+L	LATIN CAPITAL LETTER L (U+004C)	feff004c
+M	LATIN CAPITAL LETTER M (U+004D)	feff004d
+N	LATIN CAPITAL LETTER N (U+004E)	feff004e
+O	LATIN CAPITAL LETTER O (U+004F)	feff004f
+P	LATIN CAPITAL LETTER P (U+0050)	feff0050
+Q	LATIN CAPITAL LETTER Q (U+0051)	feff0051
+R	LATIN CAPITAL LETTER R (U+0052)	feff0052
+S	LATIN CAPITAL LETTER S (U+0053)	feff0053
+T	LATIN CAPITAL LETTER T (U+0054)	feff0054
+U	LATIN CAPITAL LETTER U (U+0055)	feff0055
+V	LATIN CAPITAL LETTER V (U+0056)	feff0056
+W	LATIN CAPITAL LETTER W (U+0057)	feff0057
+X	LATIN CAPITAL LETTER X (U+0058)	feff0058
+Y	LATIN CAPITAL LETTER Y (U+0059)	feff0059
+Z	LATIN CAPITAL LETTER Z (U+005A)	feff005a
+[	LEFT SQUARE BRACKET (U+005B)	feff005b
+\	REVERSE SOLIDUS (U+005C)	feff005c
+]	RIGHT SQUARE BRACKET (U+005D)	feff005d
+
+4.1's complements and 2's complements.
+
+  1's complements-->The ones' complement binary numeral system is characterized by the 
+                     bit complement of any integer value being the arithmetic negative of the value.
+                     That is, inverting all of the bits of a number (the logical complement) produces the same result as subtracting the value from 0.
+
+  2's complements-->2's complement of binary number is 1's complement of given number plus 
+                     1 to the least significant bit (LSB). For example 2's complement of binary number 10010 is (01101) + 1 = 01110.
+
+
+	
+
+
+
